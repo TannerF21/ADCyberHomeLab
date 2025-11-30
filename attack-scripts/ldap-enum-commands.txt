@@ -1,0 +1,5 @@
+realm list
+id bjohnson
+ldapsearch -LLL -x -H ldap://10.10.10.160 \
+  -D "bjohnson@HOMELAB.LOCAL" -W \
+  -b "dc=homelab,dc=local" "(objectClass=user)" sAMAccountName memberOf
